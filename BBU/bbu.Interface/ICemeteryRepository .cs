@@ -1,8 +1,8 @@
 using bbu.Model;
-namespace bbu.Interface
-{
-    public interface ICemeteryRepository : IRepository<Cemetery>
-    {
-    }
-}
+                namespace bbu.Interface
+                {
+                    public interface ICemeteryRepository : IRepository<Cemetery>
+                    {
+                    }
+                }
                 

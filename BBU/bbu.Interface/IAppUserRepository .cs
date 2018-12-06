@@ -1,8 +1,8 @@
 using bbu.Model;
-namespace bbu.Interface
-{
-    public interface IAppUserRepository : IRepository<AppUser>
-    {
-    }
-}
+                namespace bbu.Interface
+                {
+                    public interface IAppUserRepository : IRepository<AppUser>
+                    {
+                    }
+                }
                 

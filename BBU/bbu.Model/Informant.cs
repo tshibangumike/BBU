@@ -1,10 +1,13 @@
 using System;
-                namespace bbu.Model
-                {
-                    public class Informant
-                    {
-                        public int Id { get; set; }
-                        public string Name { get; set; }
-                    }
-                }
+namespace bbu.Model
+{
+    public class Informant
+    {
+        public Guid PersonId { get; set; }
+        public string RelationshipToDeceased { get; set; }
+        public int StateId { get; set; }
+        public virtual Person Person { get; set; }
+        public virtual State State { get; set; }
+    }
+}
                 

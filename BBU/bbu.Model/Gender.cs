@@ -1,10 +1,10 @@
-using System;
-                namespace bbu.Model
-                {
-                    public class Gender
-                    {
-                        public int Id { get; set; }
-                        public string Name { get; set; }
-                    }
-                }
+namespace bbu.Model
+{
+    public class Gender
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+    }
+}
                 
