@@ -9,6 +9,7 @@ namespace bbu.Model
         public string PlaceOfBodyRetrieval { get; set; }
         public string CauseOfDeath { get; set; }
         public int StateId { get; set; }
+        public virtual  Funeral Funeral { get; set; }
         public virtual Person Person { get; }
         public virtual State State { get; set; }
     }

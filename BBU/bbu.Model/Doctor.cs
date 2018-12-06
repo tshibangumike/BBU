@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 namespace bbu.Model
 {
     public class Doctor
@@ -10,6 +12,7 @@ namespace bbu.Model
         public virtual Person Person { get; set; }
         public virtual Hospital Hospital { get; set; }
         public virtual State State { get; set; }
+        public ICollection<Funeral> Funerals { get; set; }
     }
 }
                 

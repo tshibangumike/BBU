@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 namespace bbu.Model
 {
     public class Funeral
@@ -30,6 +32,9 @@ namespace bbu.Model
         public virtual AppUser CreatedBy { get; set; }
         public virtual AppUser ModifiedBy { get; set; }
         public virtual State State { get; set; }
+        public ICollection<FuneralDocument> FuneralDocuments { get; set; }
+        public ICollection<PurchaseItem> PurchaseItems { get; set; }
+        
     }
 }
                 

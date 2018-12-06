@@ -12,7 +12,6 @@ namespace bbu.Model
         public int GenderId { get; set; }
         public string CellPhoneNumber { get; set; }
         public string EmailAddress { get; set; }
-        public Guid AddressId { get; set; }
         public DateTime CreatedOn { get; set; }
         public Guid CreatedById { get; set; }
         public DateTime ModifiedOn { get; set; }

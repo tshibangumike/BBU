@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 namespace bbu.Model
 {
     public class PaymentPeriod
@@ -9,6 +11,7 @@ namespace bbu.Model
         public int YearNumber { get; set; }
         public virtual Month Month { get; set; }
         public virtual Year Year { get; set; }
+        public ICollection<Payment> Payments { get; set; }
     }
 }
                 

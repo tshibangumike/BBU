@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 namespace bbu.Model
 {
     public class Member
@@ -11,6 +13,8 @@ namespace bbu.Model
         public virtual Person Person { get; set; }
         public virtual Member ParentMember { get; set; }
         public virtual State State { get; set; }
+        public ICollection<Member> ChildMembers { get; set; }
+        public ICollection<Payment> Payments { get; set; }
     }
 }
                     
